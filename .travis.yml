@@ -1,2 +1,12 @@
-language:
-	java
+language: java
+
+jdk:
+  - oraclejdk8
+
+branches:
+  only:
+    - master
+
+script:
+- ./gradlew build
+- ./gradlew test
