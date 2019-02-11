@@ -26,4 +26,5 @@ public class TrainSensorImpl implements TrainSensor {
 		controller.setSpeedLimit(speedLimit);
 	}
 
+	//Komment merge konflikthoz
 }
