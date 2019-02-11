@@ -51,5 +51,5 @@ The figure below illustrates this behavior using an example.
 
 **Valtoztatas a Readme-ben**
 
-*kulonbozo
-*formazasokkal
+* kulonbozo
+* formazasokkal
