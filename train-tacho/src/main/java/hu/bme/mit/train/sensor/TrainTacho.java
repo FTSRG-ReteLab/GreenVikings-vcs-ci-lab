@@ -18,4 +18,7 @@ public class TrainTacho{
 			
 	}
 
+	public Table<Date, Integer, Integer> getData() {
+		return data;
+	}
 }

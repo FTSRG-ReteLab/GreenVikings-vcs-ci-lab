@@ -5,16 +5,12 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.mockito.Mockito.*;
 
-public class TrainSensorTest {
-    private int testval = 5;
-    @Test
-    public void SelfTest() {
-	Assert.assertEquals(5, testval);
-    }
-
-    private TrainTacho trainTacho = new TrainTacho();
+class TrainTachoTest {
+    private TrainTacho trainTacho;
     @Test
     public void TestForEmpty() {
         Assert.assertTrue(trainTacho.getData().isEmpty());
     }
+	
+
 }
