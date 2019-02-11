@@ -27,4 +27,4 @@ public class TrainSensorImpl implements TrainSensor {
 	}
 	//Komment merge konflikthoz
 	//Comment
-
+}

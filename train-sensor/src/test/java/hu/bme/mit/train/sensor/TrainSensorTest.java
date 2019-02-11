@@ -13,7 +13,16 @@ public class TrainSensorTest {
     }
 
     @Test
-    public void ThisIsAnExampleTestStub() {
-        // TODO Delete this and add test cases based on the issues
+    public void TestForOverrideSpeedlimit() {
+        public TrainController trainController;
+	public TrainUser trainUser;
+	public TrainSensor trainSensor = new TrainSensor(trainController, trainUser);
+
+	trainsSensor.overrideSpeedLimit(10);
+
+	assertTrue(trainSensor.getSpeedLimit()==10);
     }
+	
+
+
 }
