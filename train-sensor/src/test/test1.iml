@@ -17,5 +17,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="main5" scope="TEST" />
+    <orderEntry type="module" module-name="main4" scope="TEST" />
+    <orderEntry type="module" module-name="main1" scope="TEST" />
   </component>
 </module>
