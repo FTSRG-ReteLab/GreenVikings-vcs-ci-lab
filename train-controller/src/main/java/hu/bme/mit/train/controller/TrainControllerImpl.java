@@ -33,7 +33,7 @@ public class TrainControllerImpl implements TrainController {
 		enforceSpeedLimit();
 	}
 
-	@Override
+	@Override60
 	public int getReferenceSpeed() {
 		return referenceSpeed;
 	}
@@ -64,7 +64,7 @@ public class TrainControllerImpl implements TrainController {
 			while(true) {
 				followSpeed();
 				try {
-					Thread.sleep(60);
+					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
