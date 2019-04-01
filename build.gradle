@@ -8,5 +8,8 @@ subprojects {
   
   dependencies {
     compile group: 'com.google.guava', name: 'guava', version: '27.0.1-jre'
+    testImplementation 'org.mockito:mockito-core:2.7.22'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.7.22'
   }
 }
