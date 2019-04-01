@@ -10,7 +10,6 @@ public interface TrainUser {
 
 	void setAlarmState(boolean aS);
 
-
 	void overrideJoystickPosition(int joystickPosition);
 
 }

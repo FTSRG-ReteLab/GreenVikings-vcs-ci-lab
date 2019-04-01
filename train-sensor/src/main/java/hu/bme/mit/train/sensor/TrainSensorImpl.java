@@ -1,8 +1,8 @@
 package hu.bme.mit.train.sensor;
 
 import hu.bme.mit.train.interfaces.TrainController;
-import hu.bme.mit.train.interfaces.TrainSensor;
-import hu.bme.mit.train.interfaces.TrainUser;
+import hu.bme.mit.train.interfaces.*;
+import hu.bme.mit.train.user.TrainUserImpl;
 
 public class TrainSensorImpl implements TrainSensor {
 
@@ -20,17 +20,17 @@ public class TrainSensorImpl implements TrainSensor {
 		return speedLimit;
 	}
 
+	public TrainUser getUser(){
+		return user;
+	}
+
 	@Override
 	public void overrideSpeedLimit(int speedLimit) {
-		if(speedLimit > 500 || speedLimit < 0){
-			user.setAlarmState(true);
-		}
-		if(speedLimit < controller.getReferenceSpeed()*0.5){
+		if(speedLimit > 500 || speedLimit < 0 || speedLimit < controller.getReferenceSpeed()*0.5){
 			user.setAlarmState(true);
 		}
 
 		this.speedLimit = speedLimit;
-		controller.setSpeedLimit(speedLimit);
 	}
 	//Komment merge konflikthoz
 	//Comment

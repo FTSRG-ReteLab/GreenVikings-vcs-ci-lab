@@ -1,16 +1,16 @@
 package hu.bme.mit.train.user;
 
-import hu.bme.mit.train.interfaces.TrainController;
-import hu.bme.mit.train.interfaces.TrainUser;
+import hu.bme.mit.train.interfaces.*;
 
 public class TrainUserImpl implements TrainUser {
 
-	private boolean alarmState = false;
+	private boolean alarmState;
 	private TrainController controller;
 	private int joystickPosition;
 
 	public TrainUserImpl(TrainController controller) {
 		this.controller = controller;
+		alarmState = false;
 	}
 
 	@Override
