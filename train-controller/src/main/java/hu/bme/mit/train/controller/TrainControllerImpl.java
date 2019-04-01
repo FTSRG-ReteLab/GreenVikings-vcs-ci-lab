@@ -52,7 +52,6 @@ public class TrainControllerImpl implements TrainController {
 	}
 	
 	public class Timer extends Thread implements Runnable{
-
 		@Override
 		public void run() {
 			while(true) {
